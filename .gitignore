@@ -209,6 +209,12 @@ tempCodeRunnerFile.py
 # PyPI configuration file
 .pypirc
 
+# Research outputs (version with W&B Artifacts/DVC, not Git)
+artifacts/datasets/
+artifacts/checkpoints/
+artifacts/predictions/
+wandb/
+
 # Marimo
 marimo/_static/
 marimo/_lsp/

@@ -1,0 +1,23 @@
+seeds: [0, 1, 2, 3, 4]
+data: {Dprop: 60000, Dfit: 40000, Dtest: 40000, Dshift: 20000}
+discovery: {beta: 2, m_max: 4, pi_min: 0.01, N_min: 300}
+certification:
+  delta: 0.05
+  tau_soft_grid: [0.85, 0.90, 0.95]
+  tau_hard_grid: [0.97, 0.99, 0.995]
+  final_tau_soft: 0.90
+  final_tau_hard: 0.99
+  R_max: 2
+  K: 4
+world_model:
+  architecture: GRU
+  hidden_size: 256
+  encoder: {layers: 2, width: 256}
+  decoder: {layers: 2, width: 256}
+  optimizer: Adam
+  learning_rate: 0.0003
+  batch_size: 256
+  sequence_length: 32
+  gradient_clip_norm: 10
+  training_steps: 200000
+

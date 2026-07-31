@@ -1,0 +1,4 @@
+transport_family,formula,parameters,fitting_method,supported_feature_types,special_cases,worst_case_complexity,known_failure_modes
+bounded_affine,"clip(alpha*phi+delta_a,l,u)",alpha; action offsets; bounds,deterministic clipped residual search,numeric,constant; persistence; increment; countdown; reset,O(N^2*A),confounding and unidentifiable extrapolated clipping
+delayed_copy,psi[t-m],source; m<=4,exact enumeration,type-compatible,persistence; cross-feature; cross-agent,O(N*m*F^2),spurious autocorrelation
+slot_permutation,phi_next[sigma(i)]=phi_now[i],permutation,lexicographic exact assignment,slot-homogeneous,fixed; action-conditioned,O(n!*n),duplicate values and factorial scaling
