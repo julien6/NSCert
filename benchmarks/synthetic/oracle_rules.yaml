@@ -1,0 +1,6 @@
+# Evaluation-only. Proposal and fitting code must never load this file.
+environment_version: "1.0"
+families:
+  - clipped_action_offset
+  - action_reset
+  - zero_action_countdown

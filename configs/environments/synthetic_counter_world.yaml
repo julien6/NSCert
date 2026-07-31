@@ -1,0 +1,8 @@
+environment_id: counter_world
+environment_version: "1.0"
+agents: 2
+lower: 0
+upper: 7
+cooldown_reset: 2
+horizon: 32
+oracle_access: evaluation_only

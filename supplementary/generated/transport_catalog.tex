@@ -1,0 +1,7 @@
+\begin{tabular}{p{0.12\linewidth}p{0.16\linewidth}p{0.14\linewidth}p{0.14\linewidth}p{0.12\linewidth}p{0.12\linewidth}}
+Family & Formula & Parameters & Fitting & Types & Complexity \\
+\hline
+bounded\_affine & clip(alpha\astphi+delta\_a,l,u) & alpha; action offsets; bounds & deterministic clipped residual search & numeric & O(N^2\astA) \\
+delayed\_copy & psi[t-m] & source; m<=4 & exact enumeration & type-compatible & O(N\astm\astF^2) \\
+slot\_permutation & phi\_next[sigma(i)]=phi\_now[i] & permutation & lexicographic exact assignment & slot-homogeneous & O(n!\astn) \\
+\end{tabular}
